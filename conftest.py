@@ -32,3 +32,4 @@ def setup_browser(request):
         options=options)
 
     browser.config.driver = driver
+    yield browser
