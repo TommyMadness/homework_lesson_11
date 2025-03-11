@@ -1,9 +1,8 @@
 import os
-from turtle import update
 
 import pytest
 from dotenv import load_dotenv
-from selene.support.shared import browser
+from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
