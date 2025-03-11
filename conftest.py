@@ -31,6 +31,7 @@ def setup_browser():
     )
 
     yield
+    browser.quit()
 
 
 @pytest.fixture(scope="function", autouse=True)
@@ -41,5 +42,3 @@ def teardown_browser():
     attach.add_logs(browser)
     attach.add_html(browser)
     attach.add_video(browser)
-
-    browser.quit()
