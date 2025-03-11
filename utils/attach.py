@@ -27,7 +27,7 @@ def add_html(browser):
 
 # скринкаст
 def add_video(browser):
-    video_url = f"selenoid.autotests.cloud/video/" + browser.driver.session_id + ".mp4"
+    video_url = f"https://selenoid.autotests.cloud/video/" + browser.driver.session_id + ".mp4"
     html = (
         "<html><body><video width='100%' height='100%' controls autoplay><source src='"
         + video_url
