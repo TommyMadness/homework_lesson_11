@@ -14,15 +14,6 @@ selenoid_login = os.getenv("SELENOID_LOGIN")
 selenoid_pass = os.getenv("SELENOID_PASS")
 selenoid_url = os.getenv("SELENOID_URL")
 
-def pytest_addoption(parser):
-    parser.addoption(
-        "--browser_version",
-        action="store",
-        default="",
-        help="Версия браузера"
-    )
-
-
 @pytest.fixture(scope='function')
 def setup_browser(request):
     options = Options()
